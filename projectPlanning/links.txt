@@ -1,0 +1,87 @@
+https://www.figma.com/file/Q3KzNrJLilhP4wgMDFbNl2/HausOfCrumb?node-id=0%3A1
+
+www.hausofcrumb.com
+
+All users can order food
+All users will not be Bakers
+Bakers are users
+Baker can order food
+Bakers can make Menu items
+Users cannot make Menu items
+
+Main_User_Table
+  -PK SERIAL 
+  -Name VAR CHAR 50
+  -Email VAR CHAR 50
+  -Address VAR CHAR 50
+  -Password VAR CHAR 100
+  -User_Name VAR CHAR 50
+  -Thumbnail VAR CHAR 250
+  -Baker BOOLEAN default FALSE
+  -FK Order_Tables
+    
+    Orders_Table
+      -PK SERIAL
+
+/*    Users_Orders    */
+
+  Orders_Made
+    -PK SERIAL
+    -FK User
+    -FK Menu_Items
+
+/*    Bakers       */
+
+  Menu_Table
+    -PK SERIAL
+    -FK Menu_Items
+    -Catgories VAR CHAR 50
+    -Header_Thumbnail VAR CHAR %)
+    
+  Menu_Item
+    -PK SERIAL
+    -Thumnail VAR CHAR %)
+    -Ingredients_list
+    -Description
+    -Allergy_warning
+    -Cost
+    -Lead_time
+    -Availible BOOLEAN default FALSE
+    
+    /* many to many */
+
+    Recieved_Orders
+      -PK SERIAL
+      -FK Orders_Made
+
+B-rowse Everyone
+R-ead Everyone
+A-dd Bakers
+E-dit Baker (Users can edit their orders)
+D-elete Bakers (users can delete from their carts)
+
+
+/* Big Rocks Google and Bakers */
+
+/* hard coded first step */
+  -Create a single Baker  
+    -Create a Menu
+      -Create single items
+        - Recieve Orders_Made
+          */ - Recieve payment
+            */
+
+/* hard coded user experience */
+  -view Baker
+    -view Bakers Menu
+      - View Single items
+        - Order Single item
+          */ - Update carts
+            - Purchase item */
+
+/* Google API */
+  -Search by location
+
+/* User Authentication */
+  -Create user
+  -Persist user data
