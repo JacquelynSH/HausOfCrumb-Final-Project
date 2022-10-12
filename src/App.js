@@ -1,10 +1,32 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Navbar, Sidebar, Footer } from './components'
+import { Home, About, Products, Cart, Error } from './pages'
 
 function App() {
   return (
-    <main>Haus of Crumb Starter</main>
+    <Router>
+      <Navbar />
+      <Sidebar />
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route exact path='/about'>
+          <About />
+        </Route>
+        <Route exact path='/cart'>
+          <Cart />
+        </Route>
+        <Route exact path='/products'>
+          <Products />
+        </Route>
+        <Route path='*'>
+          <Error />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
   )
 
 }
