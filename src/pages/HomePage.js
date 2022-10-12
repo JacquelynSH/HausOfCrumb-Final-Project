@@ -1,15 +1,7 @@
-import { Hero, Services, Contact, FeaturedProducts } from '../components'
-
+import React from 'react'
+import { FeaturedProducts, Hero, Services, Contact } from '../components'
 const HomePage = () => {
-  return (
-    <main>
-      <Hero />
-      {/* <FeaturedProducts /> */}
-      {/* <Services /> */}
-      {/* <Contact /> */}
-    </main>
-  )
+  return <h4>home page</h4>
 }
-
 
 export default HomePage
