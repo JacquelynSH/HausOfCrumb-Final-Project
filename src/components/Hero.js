@@ -1,21 +1,27 @@
-import React from 'react'
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
-  return <Wrapper className='section-center'>
-    <article className='content'>
-      <h1>
-        Haus of <br />
-        Crumb
-      </h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eveniet quis nulla explicabo adipisci dolor ad impedit est repellat deleniti?</p>
-      <Link to='/products' className='btn hero-btn'>
-        order now
-      </Link>
-    </article>
-  </Wrapper>
-}
+  return (
+    <Wrapper className="section-center">
+      <article className="content">
+        <h1>
+          Haus of <br />
+          Crumb
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          eveniet quis nulla explicabo adipisci dolor ad impedit est repellat
+          deleniti?
+        </p>
+        <Link to="/products" className="btn hero-btn">
+          order now
+        </Link>
+      </article>
+    </Wrapper>
+  );
+};
 
 const Wrapper = styled.section`
   min-height: 60vh;
@@ -67,7 +73,7 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
     }
     .img-container::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 10%;
       height: 80%;
@@ -77,6 +83,6 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
     }
   }
-`
+`;
 
-export default Hero
+export default Hero;

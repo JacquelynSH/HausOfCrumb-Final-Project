@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import { PageHero } from '../components'
+import React from "react";
+import styled from "styled-components";
+import { PageHero } from "../components";
 
 const AboutPage = () => {
-  return <h4>about page</h4>
-}
+  return <h4>about page</h4>;
+};
 
 const Wrapper = styled.section`
   display: grid;
@@ -32,5 +32,5 @@ const Wrapper = styled.section`
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
   }
-`
-export default AboutPage
+`;
+export default AboutPage;

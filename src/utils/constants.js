@@ -1,20 +1,19 @@
 import React from "react";
-import { GiCompass, GiDiamindHard, GiStabbedNote } from 'react-icons/gi'
+import { GiCompass, GiDiamindHard, GiStabbedNote } from "react-icons/gi";
 export const links = [
   {
     id: 1,
-    text: 'home',
-    url: '/',
+    text: "home",
+    url: "/",
   },
   {
     id: 2,
-    text: 'about',
-    url: '/about',
+    text: "about",
+    url: "/about",
   },
   {
     id: 3,
-    text: 'products',
-    url: '/products',
+    text: "products",
+    url: "/products",
   },
-
-]
+];
